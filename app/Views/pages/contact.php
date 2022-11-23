@@ -5,11 +5,10 @@
     <div class="row">
         <div class="col">
             <h2>Contact Us</h2>
-            <?php foreach ($alamat as $a) : ?>
+            <?php foreach ($about as $a) : ?>
                 <ul>
-                    <li><?= $a['tipe']; ?></li>
-                    <li><?= $a['alamat']; ?></li>
-                    <li><?= $a['kota']; ?></li>
+                    <li><?= $a['instagram']; ?></li>
+                    <li><?= $a['github']; ?></li>
                 </ul>
 
             <?php endforeach; ?>

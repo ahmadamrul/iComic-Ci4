@@ -23,16 +23,10 @@ class Pages extends BaseController
     {
         $data = [
             'title' => 'Contact | iComics',
-            'alamat' => [
+            'about' => [
                 [
-                    'tipe' => 'Rumah',
-                    'alamat' => 'Jl. Sukono no.5',
-                    'kota' => 'Bandung'
-                ],
-                [
-                    'tipe' => 'Kantor',
-                    'alamat' => 'Jl. Tomo no.123',
-                    'kota' => 'Jakarta'
+                    'instagram' => '@ahmad.amrul',
+                    'github' => 'https://github.com/ahmadamrul',
                 ]
             ]
         ];
