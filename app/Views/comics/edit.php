@@ -21,25 +21,37 @@
                 <div class="form-group row">
                     <label for="Author" class="col-sm-2 col-form-label">Author</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="Author" placeholder="Author" name="author" value="<?= (old('author')) ? old('author') : $komik['author']; ?>">
+                        <input type="text" class="form-control <?= ($validation->hasError('author')) ? 'is-invalid' : ''; ?>" id="Author" placeholder="Author" name="author" value="<?= (old('author')) ? old('author') : $komik['author']; ?>">
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('author'); ?>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="Publisher" class="col-sm-2 col-form-label">Publisher</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="Publisher" placeholder="Publisher" value="<?= (old('publisher')) ? old('publisher') : $komik['publisher']; ?>" name="publisher">
+                        <input type="text" class="form-control <?= ($validation->hasError('publisher')) ? 'is-invalid' : ''; ?>" id="Publisher" placeholder="Publisher" value="<?= (old('publisher')) ? old('publisher') : $komik['publisher']; ?>" name="publisher">
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('publisher'); ?>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="Pages" class="col-sm-2 col-form-label">Pages</label>
                     <div class="col-sm-10">
-                        <input type="number" class="form-control" id="Pages" placeholder="Pages" value="<?= (old('pages')) ? old('pages') : $komik['pages']; ?>" name="pages">
+                        <input type="number" class="form-control <?= ($validation->hasError('pages')) ? 'is-invalid' : ''; ?>" id="Pages" placeholder="Pages" value="<?= (old('pages')) ? old('pages') : $komik['pages']; ?>" name="pages">
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('pages'); ?>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="Volumes" class="col-sm-2 col-form-label">Volumes</label>
                     <div class="col-sm-10">
-                        <input type="number" class="form-control" id="Volumes" placeholder="Volumes" value="<?= (old('volumes')) ? old('volumes') : $komik['volumes']; ?>" name="volumes">
+                        <input type="number" class="form-control <?= ($validation->hasError('volumes')) ? 'is-invalid' : ''; ?>" id="Volumes" placeholder="Volumes" value="<?= (old('volumes')) ? old('volumes') : $komik['volumes']; ?>" name="volumes">
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('volumes'); ?>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group row">

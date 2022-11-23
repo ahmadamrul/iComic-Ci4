@@ -70,8 +70,31 @@ class Comics extends BaseController
                         'is_image' => 'plesase choose a image extension (jpg,jpeg,png)',
                         'mime_in' => 'mime plesase choose a image extension (jpg,jpeg,png)'
                     ]
+                ],
+                'author' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Comic {field} is required '
+                    ]
+                ],
+                'publisher' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Comic {field} is required '
+                    ]
+                ],
+                'pages' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Comic {field} is required '
+                    ]
+                ],
+                'volumes' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Comic {field} is required '
+                    ]
                 ]
-
             ]
         )) {
             // $validation = \Config\Services::validation();
@@ -165,6 +188,30 @@ class Comics extends BaseController
                         'max_size' => 'file/cover too large',
                         'is_image' => 'plesase choose a image extension (jpg,jpeg,png)',
                         'mime_in' => 'mime plesase choose a image extension (jpg,jpeg,png)'
+                    ]
+                ],
+                'author' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Comic {field} is required '
+                    ]
+                ],
+                'publisher' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Comic {field} is required '
+                    ]
+                ],
+                'pages' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Comic {field} is required '
+                    ]
+                ],
+                'volumes' => [
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => 'Comic {field} is required '
                     ]
                 ]
             ]
